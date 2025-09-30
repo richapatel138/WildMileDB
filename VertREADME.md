@@ -123,4 +123,31 @@ qiime tools import --type 'FeatureData[Taxonomy]' --input-format HeaderlessTSVTa
 
 ## Useful Files
 
-In the VertebrateDB folder, I have included files that might be helpful. 
+In the VertebrateDB folder, I have included some files that might be helpful. 
+
+* `vertebrate_complete.txt`
+  * List of species I subsetted with. Includes Illinois fish, mammals, birds, amphibians, and reptiles, with common contaminants, and positive controls. 
+* `merged_vert_aligned_filtered.txt`
+  * Full MIDORI & MitoFish database that has been PCR'd, aligned, dereplicated, and filtered but NOT subseted. This can be used if you wish to subset with a different list of species.
+* `vertebrate_subset.txt`
+  * CRABS formated subsetted refrence database file.
+* `vertebrate_tax.qza`
+  * QIIME formated subsetted refrence database taxonomy file.
+* `vertebrate_seq.qza`
+  * QIIME formated subsetted refrence database sequence file.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
