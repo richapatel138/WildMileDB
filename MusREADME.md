@@ -23,7 +23,7 @@ After you have a list of species of interest, you will also want to add common c
 
 For our study, we did not have positive controls for the mussel runs, so those were not added, but in case you did make sure to add those species to the subset list as well. 
 
-The complete list of vertebrates for Illinois using the above info is included in this repository, [here] ###add link. 
+The complete list of vertebrates for Illinois using the above info is included in this repository, [here](https://github.com/richapatel138/WildMileDB/blob/main/MusselDB/mussels_complete.txt).
 
 ## Creating Refrence Database Using CRABS
 
