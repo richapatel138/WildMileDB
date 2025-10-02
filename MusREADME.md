@@ -1,11 +1,11 @@
 # WildMileDB - Mussels 
-This repository serves to explain how to build refrence databases using CRABS for Illinois vertebrate and mussel species, with the generated databases attached along with other helpful files. This specific README files focuses on how to curate the mussel database.
+This repository serves to explain how to build reference databases using CRABS for Illinois vertebrate and mussel species, with the generated databases attached along with other helpful files. This specific README files focuses on how to curate the mussel database.
 
 ## Making a List of Species of Interest
 
-The first (and most tedious) step of creating the refrence database if creating a list of species of intrest. This is what we will use to subset the sequences we get from public repositories, and it allows for a more focused scope. There are many different ways that you can choose to go about this process. For my project, I wanted to focus on mussel species found in Illinois.
+The first (and most tedious) step of creating the reference database if creating a list of species of intrest. This is what we will use to subset the sequences we get from public repositories, and it allows for a more focused scope. There are many different ways that you can choose to go about this process. For my project, I wanted to focus on mussel species found in Illinois.
 
-The most comprehensive approach I found was utilizing the Illinois Natural History Survey (INHS). I used all the species found on the following website to create the refrence subset list. 
+The most comprehensive approach I found was utilizing the Illinois Natural History Survey (INHS). I used all the species found on the following website to create the reference subset list. 
 
 * [Mussels](https://mollusk.inhs.illinois.edu/species/freshwater-bivalves-of-illinois/)
 
@@ -25,9 +25,9 @@ For our study, we did not have positive controls for the mussel runs, so those w
 
 The complete list of vertebrates for Illinois using the above info is included in this repository, [here](https://github.com/richapatel138/WildMileDB/blob/main/MusselDB/mussels_complete.txt).
 
-## Creating Refrence Database Using CRABS
+## Creating Reference Database Using CRABS
 
-To create the refrence database, we will use [CRABS](https://github.com/gjeunen/reference_database_creator). The CRABS GitHub has great instructions for installation as well as different uses. Below I have outlined the commands I used. 
+To create the reference database, we will use [CRABS](https://github.com/gjeunen/reference_database_creator). The CRABS GitHub has great instructions for installation as well as different uses. Below I have outlined the commands I used. 
 
 1. The first step is to download taxonomic information files -- these are needed to assign taxonomic lineage to each downloaded sequence in the reference database.
 ```
@@ -83,13 +83,13 @@ crabs --subset --input midori_invert_aligned_filtered.txt --output midori_mussel
 
 9. Visualize the subsetted database.
 
-Something to remeber is that not every sequence that you have in your subset list will end up being in the subsetted refrence database. This is due to the factt that only species that have refrence sequences can be subsetted for. A good way to see the composition of the refrence database is to use the `--diversity-figure` functionality. It will show you the number of species and number of sequences for the level you specified (4 = order level classification, though this can be changed if you want something more/less specific). 
+Something to remeber is that not every sequence that you have in your subset list will end up being in the subsetted reference database. This is due to the factt that only species that have reference sequences can be subsetted for. A good way to see the composition of the reference database is to use the `--diversity-figure` functionality. It will show you the number of species and number of sequences for the level you specified (4 = order level classification, though this can be changed if you want something more/less specific). 
 
 ```
 crabs --diversity-figure --input midori_mussels_subset.txt --output midori_mussels_subset_diversity_figure.png --tax-level 4
 ```
 
-Once you have the final `.txt` file, this can be exported depending on your needs. For us, we use QIIME, so these are the commands to export the subsetted refrence database into QIIME format.
+Once you have the final `.txt` file, this can be exported depending on your needs. For us, we use QIIME, so these are the commands to export the subsetted reference database into QIIME format.
 
 10. Export for QIIME use.
 
@@ -114,7 +114,7 @@ In the MusselDB folder, I have included some files that might be helpful.
 * `midori_invert_aligned_filtered.txt`
   * Full MIDORI database that has been PCR'd, aligned, dereplicated, and filtered but NOT subseted. This can be used if you wish to subset with a different list of species.
 * `midori_mussels_subset.txt`
-  * CRABS formated subsetted refrence database file.
+  * CRABS formated subsetted reference database file.
 * `midori_mussels_tax.qza`
   * QIIME formated subsetted refrence database taxonomy file.
 * `midori_mussels_seq.qza`
