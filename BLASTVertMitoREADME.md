@@ -37,14 +37,7 @@ qiime tools import --type 'FeatureData[Taxonomy]' --input-format HeaderlessTSVTa
 
 ## Useful Files
 
-In the BLASTVertMito folder, I have included some files that might be helpful. 
-
-* `vert_mito.txt`
-  * Full downloaded NCBI sequences for vertebrate m,itochondrial RefSeq sequences in CRABS format. 
-* `mito_refseq_tax.qza`
-  * QIIME formated reference database taxonomy file.
-* `mito_refseq_seq.qza`
-  * QIIME formated reference database sequence file.
+The files are too large to upload onto GitHub, but I can send them if needed! 
   
 
 
