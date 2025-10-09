@@ -8,3 +8,8 @@ If you wish to create a vertebrate reference database please see the following R
 
 If you wish to create a mussel reference database please see the following README file.
 * [MusREADME.md](https://github.com/richapatel138/WildMileDB/blob/main/MusREADME.md)
+
+
+
+If you wish to create a vertebrate mitochondiral RefSeq database for BLAST use please see the following README file.
+* [BLASTVertMitoREADME.md](https://github.com/richapatel138/WildMileDB/blob/main/BLASTVertMitoREADME.md)
